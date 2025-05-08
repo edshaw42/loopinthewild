@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "env": {
+    "NEXT_PUBLIC_GOOGLE_MAPS_API_KEY": "@next_public_google_maps_api_key",
+    "NEXT_PUBLIC_GOOGLE_SHEET_ID": "@next_public_google_sheet_id",
+    "NEXT_PUBLIC_GOOGLE_APPS_SCRIPT_URL": "@next_public_google_apps_script_url"
+  }
+}
